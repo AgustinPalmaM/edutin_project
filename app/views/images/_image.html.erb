@@ -1,0 +1,4 @@
+<%= image.id %>
+<%= image.description %><br>
+<%= link_to  "Edit Image", edit_image_path(image) %><br>
+<%= button_to  "Destroy", image, method: :delete, data: {confirm: 'Are you sure?'} %><br>
