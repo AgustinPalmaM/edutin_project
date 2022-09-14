@@ -1,5 +1,7 @@
-<%= form_with(model: @image) do |form|%>
-  <%= form.label :description %>
-  <%= form.text_field :description %>
-  <%= form.submit %>
-<% end %>
+<div class="form-group">
+  <%= form_with(model: @image) do |form|%>
+    <%= form.label :description %>
+    <%= form.text_field :description, class: 'form-control' %>
+    <%= form.submit class: 'btn btn-primary' %>
+  <% end %>
+</div>

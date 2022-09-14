@@ -1,7 +1,8 @@
-<div class="d-flex gap-2 p-2">
-  <div class="form-control"><%= image.id %></div>
-  <div class="form-control"><%= image.description %></div>
-  <div class="form-control"><%= image.likes_counter %></div>
-  <%= link_to  "Edit Image", edit_image_path(image), class: "btn btn-primary form-control" %><br>
-  <%= button_to  "Destroy", image, method: :delete, class: "btn btn-danger form-control" %><br>
+<div class="col">
+  <figure class="figure">
+    <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" class="figure-img img-fluid rounded" >
+    <figcaption class="figure-caption"><%= image.description %>.</figcaption>
+    <%= link_to  "Edit", edit_image_path(image) %>
+    <%= link_to  "Delete", image, data: { "turbo-method": :delete } %><br>
+  </figure>
 </div>

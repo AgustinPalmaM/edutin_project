@@ -8,6 +8,6 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-(1..100).each do |i|
+(1..4).each do |i|
   Image.create(id: i, description: "Imagen Numero #{i}", likes_counter: rand(1000))
 end
