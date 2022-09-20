@@ -14,7 +14,9 @@ class ImagesController < ApplicationController
   def create
     @image = Image.new(image_params)
     if @image.save
-      redirect_to @image
+      redirect_to @image, notice: 'image created'
+    else
+      render :new, status: :unprocessable_entity
     end
   end
   

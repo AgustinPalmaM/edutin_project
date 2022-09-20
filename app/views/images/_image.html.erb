@@ -1,7 +1,8 @@
 <div class="col">
   <figure class="figure">
     <img src="https://getuikit.com/v2/docs/images/placeholder_600x400.svg" class="figure-img img-fluid rounded" >
-    <figcaption class="figure-caption"><%= image.description %>.</figcaption>
+    <figcaption class="figure-caption"><%= image.description %></figcaption>
+    <figcaption class="figure-caption">Likes: <%= image.likes_counter %></figcaption>
     <%= link_to  "Edit", edit_image_path(image) %>
     <%= link_to  "Delete", image, data: { "turbo-method": :delete } %><br>
   </figure>
